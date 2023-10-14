@@ -1,0 +1,181 @@
+.main{
+    width: 100%;
+    height: 100%;
+    
+}
+.first-slide{
+    background-color: white;
+    height: 100%;
+    width: max-content;
+    border-radius: 0px 15px 15px 0px;
+    animation: slide-left-panel 1s;
+}
+@keyframes slide-left-panel{
+    0% {margin-left: -400px; opacity: 0%;}
+    100% {margin-left: 0px; opacity: 100%;}
+}
+.titles{
+    padding-top: 220px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+}
+.label-1{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    text-align: center;
+    padding-top: 50px;
+    animation: slide-left-lbl1 2.5s;
+}
+@keyframes slide-left-lbl1{
+    0% {margin-left: -100px; opacity: 0%;}
+    100% {margin-left: 0px; opacity: 100%;}
+}
+.label-12{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    animation: slide-left-lbl2 2.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+@keyframes slide-left-lbl2{
+    0% {margin-left: -100px; opacity: 0%;}
+    100% {margin-left: 0px; opacity: 100%;}
+}
+.first-slide{
+    height: 100%;
+    width: max-content;
+}
+.loginPanel{
+    padding-top: 200px;
+}
+.login_label{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    animation: slide-up-Log_lbl 2.5s;
+    animation-delay: 3.8s;
+    animation-fill-mode: both;
+}
+@keyframes slide-up-Log_lbl{
+    0% {margin-bottom: -50px; opacity: 0%;}
+    100% {margin-bottom: 0px; opacity: 100%;}
+}
+.UsernameInput{
+    width: 220px;
+    height: 35px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-color: white;
+    border: 2px;
+    outline: auto;
+    outline-color: white;
+    border-radius: 60px;
+    
+}
+.foraligments{
+    padding-bottom: 15px;
+    animation: slide-up-Log_lbl 2.5s;
+    animation-delay: 3.8s;
+    animation-fill-mode: both;
+}
+.username_TXTBOXcs{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.UsernameInput ::placeholder{
+    color: white;
+}
+
+.passwordInput{
+    width: 220px;
+    height: 35px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-color: white;
+    border: 2px;
+    outline: auto;
+    outline-color: white;
+    border-radius: 60px;
+    animation: slide-up-Log_lbl 2.5s;
+    animation-delay: 3.8s;
+    animation-fill-mode: both;
+    
+}
+.Password_TXTBOXcs{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.passwordInput ::placeholder{
+    color: white;
+}
+
+.loging_BTN{
+    background-color: white;
+    border-radius: 15px;
+    width: 220px;
+    height: 33px;
+    animation: Poppup-Log_BTN 2.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    
+}
+@keyframes Poppup-Log_BTN{
+    0% {margin: -10px; opacity: 0%;}
+    100% {margin: 0px; opacity: 100%;}
+}
+.loging_BTN_text{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.troubleshoot-Link{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    padding-top: 0px;
+    animation: Poppup-Log_BTN 2.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+.usrnmIMG{
+    padding-left: 5px;
+}
+.psswrdIMG{
+    padding-left: 5px;
+}
+.parent{
+    position: absolute;
+}
+.front_login_page_IMG{
+    position: absolute;
+    height: 730px;
+    padding-left: 670px;
+    padding-top: 100px;
+    animation: slide-left-IMG 2.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+@keyframes slide-left-IMG{
+    0% {margin-left: -100px; opacity: 0%;}
+    100% {margin-left: 0px; opacity: 100%;}
+}

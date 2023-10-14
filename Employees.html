@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ====Bootstrap Links ==== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="Employees-assets/css/EmployeesPagestyles.css">
+
+        <title>Nils Management</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+            <div class="option_title">
+                <h1>Employees</h1>
+            </div>
+            <div class="header__img">
+                <img src="Employees-assets/img/mydada.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class="navbar__img"><img src="Employees-assets/img/BrandingImg.jpg" alt=""></i>
+                        <span class="nav__logo-name">Nils Management</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="main-page.html" class="nav__link">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="#" class="nav__link active">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">Employees</span>
+                        </a>
+                        
+                        <a href="Stocks.html" class="nav__link">
+                            <i class='bx bxs-cart nav__icon' ></i>
+                            <span class="nav__name">Stocks</span>
+                        </a>
+
+                        <!--<a href="#" class="nav__link">
+                            <i class='bx bxs-ghost nav__icon' ></i>
+                            <span class="nav__name">Kill Me Please!</span>
+                        </a> -->
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out-circle nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+        <br>
+        <center>
+            <div class="container" style="padding-top: 100px;">
+                <div class="orders box-Shadow-1">
+                    <div class="row">
+                        <div class="col-3 OnlineSales">
+                            <a href="Employee-Details.php" class="dashboard_Links">
+                            <i style="color: #000000;" class='bx bxs-user-check dashboard-Icons'></i><br>
+                            <span>Employee Details</span>
+                            </a>
+                        </div>
+                        <div class="col-3 OutletSales">
+                            <a href="AddEmployee.php" class="dashboard_Links">
+                            <i style="color: #050505;" class='bx bxs-user-plus dashboard-Icons'></i><br>
+                            <span>Add a Employee</span>
+                            </a>
+                        </div>
+                        <div class="col-3 MonthlySales">
+                            <a href="EditEmployee.php" class="dashboard_Links">
+                            <i style="color: #000000;" class='bx bxs-user-detail dashboard-Icons'></i><br>
+                            <span>Edit Employee</span>
+                            </a>
+                        </div>
+                        <div class="col-3 ReturnSales">
+                            <a href="DeleteEmployee.php" class="dashboard_Links">
+                            <i style="color: #000000;" class='bx bxs-user-minus dashboard-Icons'></i><br>
+                            <span>Delete Employee</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </center>
+        <!--===== MAIN JS =====-->
+        <script src="Employees-assets/js/EmployeesPagej.js"></script>
+
+        <!--
+            <table className="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th> Order ID </th>
+                            <th> Customer Email </th>
+                            <th> Package Type </th>
+                            <th> Card Number </th>
+                            <th> Country</th>
+                            <th> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.state.ordersAr.map(
+                                orders =>
+                                <tr key = {orders.id}>
+                                    <td>{orders.id}</td>
+                                    <td>{orders.customerEmail}</td>
+                                    <td>{orders.packageType}</td>
+                                    <td>{orders.cardNumber}</td>
+                                    <td>{orders.country}</td>
+                                    <td><a className="btn btn-success" style={{marginRight:"10px"}}>Edit</a>
+                                    <button className="btn btn-danger" onClick={ () => this.deleteOrder(orders.id)}>Remove</button>
+                                    </td>
+                                </tr>
+                            )
+                        }
+                    </tbody>
+                </table>
+        -->
+    </body>
+</html>
